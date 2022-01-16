@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScriptの簡単な機能紹介</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+        // alert('JavaScript実行中');
+
+        // console.log(confirm(
+        //     'JavaScript実行中'
+        // ));
+
+        name = prompt('名前を入力してください',"");
+        document.write("ようこそ!"+name+"さん");
+
+        function add10(){
+            document.add.num1.value=parseInt(document.add.num1.value)+10;
+        }
+
+        function SetColor(foreColor, backColor) {
+            document.bgColor = document.form1.Text1.value;;
+            document.fgColor = document.form1.Text2.value;;
+        }
+
+    </script>
+
+    <br><br>
+    <form action="post" name="add">
+        <input type="text" name="num1" value="0">
+        <input type="button" value="+１０" onclick="add10()">
+    </form>
+    <br>
+    <form name="form1" action=""> 
+        前景色<input id="Text1" type="text" /><br />
+        背景色<input id="Text2" type="text" /><br />
+        <input id="Button2" type="button" value="button" onclick="SetColor()"/>
+    </form>
+
+
+</body>
+</html>
