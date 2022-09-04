@@ -55,23 +55,28 @@
 	</div>
 	
 	<p id="counter">0</p>
- 	<p><input type="button" id="btnAdd" value="+"></p>
+ 	<p><input type="button" id="btnAdd" value="+" ></p>
 
 	<p><a href="#">記録ページ</a></p>
 </body>
 
 <script type="text/javascript">
-    let i=0;
-    let count = document.getElementById(count);
-    let btn = document.getElementById(btn);
 
-    function add(){
-        i ++;
-        count.innerHTML = i;
+    var add = function(){
+        let count = document.getElementById(count);
+        count.innerHTML = "cilik_after"
     }
+    
+    // let btn = document.getElementById(btn);
 
-    btn.addEventListener("click",add)
+    // function add(){
+    //     i ++;
+    //     count.innerHTML = i;
+    // }
+
+    // btn.addEventListener("click",add)
 </script>
+
 	
 </html>
 
