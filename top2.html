@@ -46,6 +46,7 @@
 	</style>
 
 </head>
+	
 <body>
 	<h1>GA4計測テストページ</h1>
 	<div class="container">
@@ -58,5 +59,19 @@
 
 	<p><a href="#">記録ページ</a></p>
 </body>
+
+<script type="text/javascript">
+    let i=0;
+    let count = document.getElementById(count);
+    let btn = document.getElementById(btn);
+
+    function add(){
+        i ++;
+        count.innerHTML = i;
+    }
+
+    btn.addEventListener("click",add)
+</script>
+	
 </html>
 
